@@ -1,0 +1,3 @@
+[submodule "astrowind"]
+	path = tmpl/astrowind
+	url = https://github.com/arthelokyo/astrowind.git
