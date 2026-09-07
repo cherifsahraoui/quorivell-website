@@ -1,0 +1,26 @@
+---
+import { siteConfig } from '../config';
+
+interface Props {
+  currentPath: string;
+}
+
+const { currentPath } = Astro.props;
+const links = [
+  { href: '/privacy', label: 'Privacy' },
+  { href: '/support', label: 'Support' },
+];
+---
+
+<header class="site-header">
+  <div class="shell header-inner">
+    <a class="wordmark" href="/" aria-label={`${siteConfig.name} home`}>{siteConfig.name}<span>.</span></a>
+    <nav aria-label="Main navigation">
+      {links.map((link) => (
+        <a class:list={{ 'nav-link': true, active: currentPath === link.href }} href={link.href} aria-current={currentPath === link.href ? 'page' : undefined}>
+          {link.label}
+        </a>
+      ))}
+    </nav>
+  </div>
+</header>

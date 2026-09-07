@@ -1,0 +1,9 @@
+---
+import { siteConfig } from '../config';
+---
+
+<footer class="site-footer shell">
+  <span>© {siteConfig.year} {siteConfig.name}</span>
+  <span>Decisions, with evidence.</span>
+  <a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a>
+</footer>

@@ -1,0 +1,32 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+
+const title = 'Privacy | Quorivell';
+---
+
+<SiteLayout title={title} description="Quorivell privacy policy and local-first data practices.">
+  <section class="document shell">
+    <div class="eyebrow">Privacy policy · effective September 6, 2026</div>
+    <h1>Private by<br /><em>default.</em></h1>
+    <p class="lede">Quorivell helps you turn rough conversations into reviewable decisions and commitments. This policy explains how the app handles information.</p>
+
+    <div class="policy-grid">
+      <aside><span class="section-label">At a glance</span><p>Source conversations are local by default. Optional online features are separate and must be clearly enabled.</p></aside>
+      <article>
+        <h2>Information you enter</h2>
+        <p>Quorivell may process conversation text, notes, decisions, commitments, evidence, owners, and due dates that you choose to enter. These records are intended to remain on your device in local-only use.</p>
+        <h2>Optional online features</h2>
+        <p>When you deliberately enable account sync or another online feature, the app may send the minimum information needed for that feature to its configured Firebase services. The app should explain the feature and processing boundary before submission. Do not enable online processing for private content unless you understand and accept that boundary.</p>
+        <h2>Diagnostics</h2>
+        <p>Quorivell should not place source conversations, evidence, prompts, corrections, credentials, or model output into analytics, crash reports, or diagnostic logs. Release builds are reviewed against this requirement.</p>
+        <h2>Retention and deletion</h2>
+        <p>Local records remain until you delete them or remove the app. Optional online records, if shipped, are subject to the account and deletion controls presented in the app and service configuration.</p>
+        <h2>Children</h2>
+        <p>Quorivell is not directed to children. Do not submit information about a child unless you have the authority and consent required by applicable law.</p>
+        <h2>Contact</h2>
+        <p>Questions about privacy can be sent to <a href="mailto:support@quorivell.com">support@quorivell.com</a>. This policy must be reviewed and finalized by the responsible legal entity before store submission.</p>
+        <p class="updated">Last updated: September 6, 2026</p>
+      </article>
+    </div>
+  </section>
+</SiteLayout>

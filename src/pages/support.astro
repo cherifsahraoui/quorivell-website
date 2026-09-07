@@ -1,0 +1,31 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+
+const title = 'Support | Quorivell';
+---
+
+<SiteLayout title={title} description="Quorivell support and contact information.">
+  <section class="document shell">
+    <div class="eyebrow">Support desk</div>
+    <h1>Let's make the<br /><em>record clear.</em></h1>
+    <p class="lede">For account, data, or app questions, email the Quorivell support desk. Please do not include private conversation text unless it is necessary and you have removed sensitive details.</p>
+
+    <a class="contact-card" href="mailto:support@quorivell.com">
+      <span class="section-label">Email support</span>
+      <strong>support@quorivell.com</strong>
+      <span>Send a message <span aria-hidden="true">-&gt;</span></span>
+    </a>
+
+    <div class="faq-grid">
+      <div><span class="section-label">Common questions</span></div>
+      <div>
+        <h2>Where is my source text stored?</h2>
+        <p>In local-only use, source text and records are stored on your device. Optional online features have separate processing and consent requirements.</p>
+        <h2>What should I include in a support request?</h2>
+        <p>Include your app version, Android device model, Android version, and a description of what happened. Use synthetic text or a redacted screenshot instead of private conversations.</p>
+        <h2>How do I report a privacy concern?</h2>
+        <p>Email support@quorivell.com with &quot;Privacy&quot; in the subject. Do not send passwords, access codes, private conversation content, or payment details.</p>
+      </div>
+    </div>
+  </section>
+</SiteLayout>
