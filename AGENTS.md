@@ -1,6 +1,7 @@
 # Quorivell Site UI Rules
 
-Apply these rules to every file under `site/`:
+Apply these rules to every file under `website/` (Astro sources live in
+`website/src/`). This file is site-only; app architecture is [AGENTS.md](../AGENTS.md).
 
 - Preserve the Quorivell editorial visual language: warm paper background, deep green ink, mint surfaces, and coral accents.
 - Keep the product promise visible: private by default, reviewable decisions, and evidence retained with every record.
@@ -9,4 +10,4 @@ Apply these rules to every file under `site/`:
 - Keep the site static and dependency-light. Do not add analytics, remote font loading, or third-party embeds without an explicit privacy decision.
 - Use responsive layouts that remain readable on small screens. Avoid dense card grids, generic SaaS language, purple gradients, and decorative UI that competes with the product message.
 - Treat privacy language as product behavior: never claim data is local, deleted, encrypted, or never transmitted unless the app implementation and release configuration support that claim.
-- Run `npm run check` and `npm run build` from `site/` after structural changes.
+- Run `npm run check` and `npm run build` from `website/` after structural changes.
