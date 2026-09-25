@@ -29,3 +29,12 @@ deployable site in `dist/`.
 The privacy page is a release draft. Have the responsible legal entity review it
 against the exact Android release, Firebase services, retention behavior, and
 store disclosures before submission.
+
+## In-app update manifest
+
+`public/app-update.json` is served at `https://quorivell.com/app-update.json`.
+The Flutter app reads `latestVersion` from that URL on cold start. Keep it in
+lockstep with the app marketing version by running
+`dart run tools/bump_version.dart <x.y.z>` from the `ai_flutter` repo root,
+then commit and push this site repository (and the submodule pointer in
+`ai_flutter` when that PR ships).
