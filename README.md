@@ -32,9 +32,13 @@ store disclosures before submission.
 
 ## In-app update manifest
 
-`public/app-update.json` is served at `https://quorivell.com/app-update.json`.
-The Flutter app reads `latestVersion` from that URL on cold start. Keep it in
-lockstep with the app marketing version by running
+`public/app-update.json` is fetched by the Flutter app from raw GitHub
+(`https://raw.githubusercontent.com/cherifsahraoui/quorivell-website/main/public/app-update.json`)
+on cold start — no GitHub Pages deploy is required for the update check.
+Keep `latestVersion` in lockstep with the app marketing version by running
 `dart run tools/bump_version.dart <x.y.z>` from the `ai_flutter` repo root,
-then commit and push this site repository (and the submodule pointer in
+then commit and push this repository (and the submodule pointer in
 `ai_flutter` when that PR ships).
+
+GitHub Pages (below) still publishes the marketing / privacy site at
+`quorivell.com`; that is separate from the update manifest.
