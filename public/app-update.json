@@ -1,5 +1,5 @@
 {
-  "latestVersion": "0.6.1",
+  "latestVersion": "0.7.0",
   "storeUrl": "https://play.google.com/store/apps/details?id=com.quorivell.app",
   "notes": "Public Quorivell Play listing version for the in-app update prompt. Fetched from raw GitHub (https://raw.githubusercontent.com/cherifsahraoui/quorivell-website/main/public/app-update.json). Keep latestVersion in lockstep with the app marketing version via dart run tools/bump_version.dart from the ai_flutter repo."
 }
