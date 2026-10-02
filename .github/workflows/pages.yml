@@ -1,8 +1,7 @@
 name: Deploy Quorivell site
 
+# Deploy is manual: Actions → Deploy Quorivell site → Run workflow.
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 permissions:
