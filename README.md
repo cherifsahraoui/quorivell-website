@@ -42,6 +42,7 @@ Looking for the app itself, its architecture, or how to build it? Head to the
 | --- | --- |
 | `src/pages/index.astro` | Home page ([quorivell.com](https://quorivell.com)) |
 | `src/pages/privacy.astro` | Privacy policy ([quorivell.com/privacy](https://quorivell.com/privacy)) |
+| `src/pages/delete-account.astro` | Account &amp; data deletion ([quorivell.com/delete-account](https://quorivell.com/delete-account)) |
 | `src/pages/support.astro` | Support and FAQ ([quorivell.com/support](https://quorivell.com/support)) |
 | `src/layouts/`, `src/components/` | Shared layout, header and footer |
 | `src/config.ts` | Single source for site name, title, description and contact email |
