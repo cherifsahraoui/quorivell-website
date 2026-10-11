@@ -6,26 +6,28 @@ const title = 'Privacy | Quorivell';
 
 <SiteLayout title={title} description="Quorivell privacy policy and local-first data practices.">
   <section class="document shell">
-    <div class="eyebrow">Privacy policy · effective September 6, 2026</div>
+    <div class="eyebrow">Privacy policy · updated October 11, 2026</div>
     <h1>Private by<br /><em>default.</em></h1>
     <p class="lede">Quorivell helps you turn rough conversations into reviewable decisions and commitments. This policy explains how the app handles information.</p>
 
     <div class="policy-grid">
       <aside><span class="section-label">At a glance</span><p>Source conversations are local by default. Optional online features are separate and must be clearly enabled.</p></aside>
       <article>
-        <h2>Information you enter</h2>
-        <p>Quorivell may process conversation text, notes, decisions, commitments, evidence, owners, and due dates that you choose to enter. These records are intended to remain on your device in local-only use.</p>
-        <h2>Optional online features</h2>
-        <p>When you deliberately enable account sync or another online feature, the app may send the minimum information needed for that feature to its configured Firebase services. The app should explain the feature and processing boundary before submission. Do not enable online processing for private content unless you understand and accept that boundary.</p>
+        <h2>Information on your device</h2>
+        <p>Without an account, conversation text, review items, ledger records, chats, settings, and downloaded models stay in the app's private storage on your device until you delete them or uninstall the app.</p>
+        <h2>Optional account and sync</h2>
+        <p>An account is optional. Firebase Authentication stores your email and user id. Your profile can hold your name and an optional photo in Cloud Storage. Cloud sync is off until you turn it on. While it is on, ledger items and evidence quotes, review items, extraction history, kinds, settings, and your AI-processing choice are copied to Cloud Firestore under your account. Capture text and chats are not uploaded. Turning sync off stops further uploads of those records.</p>
+        <h2>AI processing</h2>
+        <p>Extraction, summaries, and chat run on this device by default. Chat always stays on the device. If you allow cloud processing and confirm a cloud extract, that run can send the conversation text and the enabled kind names through a Quorivell Cloud Function to Google's Gemini API for that run only. Quorivell does not store that text. Official store builds keep extraction on the device unless that release was built with remote AI enabled. If the cloud run fails, extraction continues on this device when a local model is installed.</p>
         <h2>Diagnostics</h2>
-        <p>Quorivell should not place source conversations, evidence, prompts, corrections, credentials, or model output into analytics, crash reports, or diagnostic logs. Release builds are reviewed against this requirement.</p>
-        <h2>Retention and deletion</h2>
-        <p>Local records remain until you delete them or remove the app. Account and cloud deletion, including the 30-day grace period, are described on the <a href="/delete-account">account and data deletion</a> page.</p>
+        <p>Quorivell does not put source conversations, evidence, prompts, corrections, credentials, or model output into analytics or crash reports. There are no ads and no sale of your data.</p>
+        <h2>Export, retention, and deletion</h2>
+        <p>Export ledger creates a JSON file on your device that you save or share yourself. Delete ledger on this device removes content from this phone only. Delete all cloud data marks cloud copies deleted; they are permanently removed after 30 days and your account stays. Delete account marks the account and cloud data for deletion, signs you out, and removes the data on this device. Signing in again within 30 days restores the account. Cloud copies that were already wiped stay deleted. After 30 days a daily cleanup permanently deletes the account, including the login. Details are on the <a href="/delete-account">account and data deletion</a> page.</p>
         <h2>Children</h2>
         <p>Quorivell is not directed to children. Do not submit information about a child unless you have the authority and consent required by applicable law.</p>
         <h2>Contact</h2>
-        <p>Questions about privacy can be sent to <a href="mailto:support@quorivell.com">support@quorivell.com</a>. This policy must be reviewed and finalized by the responsible legal entity before store submission.</p>
-        <p class="updated">Last updated: September 6, 2026</p>
+        <p>Questions about privacy can be sent to <a href="mailto:support@quorivell.com">support@quorivell.com</a>. This page states how the app behaves. It is not a legal opinion and still needs review by the responsible legal entity.</p>
+        <p class="updated">Last updated: October 11, 2026</p>
       </article>
     </div>
   </section>
