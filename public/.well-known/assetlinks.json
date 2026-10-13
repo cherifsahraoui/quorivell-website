@@ -1,12 +1,15 @@
 [
   {
-    "relation": ["delegate_permission/common.get_login_creds"],
+    "relation": [
+      "delegate_permission/common.get_login_creds"
+    ],
     "target": {
       "namespace": "android_app",
       "package_name": "com.quorivell.app",
       "sha256_cert_fingerprints": [
         "35:8B:F7:24:67:84:01:CF:10:AF:83:CB:15:6B:98:3E:7D:ED:C5:C5:0E:F8:5B:D5:F3:25:07:59:F1:AA:65:2D",
-        "DD:3C:F6:9C:66:77:04:42:36:CC:6A:C3:5C:99:A2:D3:49:EC:E2:E5:F8:91:2E:0E:CD:7A:7F:35:B6:19:81:AB"
+        "DD:3C:F6:9C:66:77:04:42:36:CC:6A:C3:5C:99:A2:D3:49:EC:E2:E5:F8:91:2E:0E:CD:7A:7F:35:B6:19:81:AB",
+        "FB:E0:94:ED:C5:EE:1B:19:DF:C3:D5:79:18:2A:80:88:CB:76:8A:C3:9C:F4:60:AA:0D:82:AE:66:6A:8D:E6:B7"
       ]
     }
   }
